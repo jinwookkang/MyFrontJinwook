@@ -1,0 +1,15 @@
+@charset "UTF-8";
+
+/* CSS 문법 적용해서 작성 */
+
+body{
+
+color:tomato;
+
+}
+
+h1 {
+	/* 글자 꾸밈선 : 취소선(관통선) */
+	text-decoration:line-through;
+	
+}

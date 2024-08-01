@@ -1,0 +1,63 @@
+<!-- 테이블 태그 7월 31일 -->
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+
+<style type="text/css">
+table, th, td{
+      border: 1px solid #ccc;
+ 	  border-collapse:collapse;
+}
+</style>
+
+
+</head>
+<body>
+
+
+<h1>테이블 태그</h1>
+<h3>colspan 속성, rowspan속성</h3>
+<hr>
+
+
+<table>
+
+<tr>
+	<td >1x1 셀</td>
+	<td >1x2 셀</td>
+	<td rowspan="3">1x3 셀</td>  <!--2행에 걸쳐서 표현됨 -->
+								 <!-- tr을 한개 더만들어도 3이상으로 못함 tr은 구분선 td를 만들어줘야함 -->
+</tr>
+
+<tr>
+	<td>2x1 셀</td>
+	<td>2x2 셀</td>
+	<td>2x3 셀</td>				 <!-- 1x3셀에 밀려서 오른쪽으로 빠짐 -->
+
+</tr>
+
+
+<tr>
+<!-- <td colspan = "3">3x1 셀 테스트 테스트</td> 1x3셀의 rowspan과 겹쳐버린다 -->
+	 <td colspan = "2">3x1 셀 테스트 테스트</td>
+</tr>
+
+
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

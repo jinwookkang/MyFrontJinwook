@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>첫번째 문서 연습</title>
+</head>
+<body>
+ 
+<div>
+
+<div>
+	<h1>글자 관련 태그</h1> <!-- h1이 블록이니까 한줄을 차지하려함 옆의 공간을 허용하지않음 -->
+	<h3>hn p, pre, blockquote</h3>
+</div>
+
+<!-- HoRizon, 수평선, 경계선 -->
+<hr>  
+<div>
+            기본 텍스트
+       	<h1>Heading 1</h1> <!-- 기본 텍스트의 2배  --> 
+       	<h2>Heading 2</h2> <!-- 1.5배 -->
+       	<h3>Heading 3</h3> <!-- 1.17배 -->
+       	<h4>Heading 4</h4> <!-- 1배 -->
+       	<h5>Heading 5</h5> <!-- 0.83배 -->
+       	<h6>Heading 6</h6> <!-- 0.67배 -->
+                    
+	   	
+</div>
+       
+<hr>
+
+<div>
+<p>가나  다라마
+
+
+
+바사아          자차
+
+
+카타      파   하</p>
+
+<p>My favorite color is <del style="color: blue">blue</del> <ins style="color: red">red</ins>!</p>
+
+
+
+<!-- HTML코드는 기본적으로 내용물(컨텐츠)의 공백 문자를 무시한다 -->
+<!-- 공백 문자를 여러 개를 띄어쓰기 1개로 바꿔서 표현한다 -->
+
+<p>AB&nbsp;CDE<br>  <!-- &nbsp == & // 특수기호 & 키워드; 이렇게 쓰면안됨, 글자크기 사이즈 정렬은 CSS로 한다-->
+FGH&emsp;IJK<br>
+LMNO&ensp;PQ</p>
+<span>RSTU</span>V
+
+<!--br태그 BReack, 줄바꿈 태그 여는 태그만 있고 닫는 태그가 없음-->
+
+<!--&nbsp; - No Break Space 줄은 안깨뜨리고 띄어쓰기만 추가한다 -->
+<!--&emsp;- EM SPace, 글자 크기만큼 띄어쓰기(전각크기)  -->
+<!--&ensp; - EN SPace, 글자 반절만큼 띄어쓰기(반각크기) -->
+
+
+<hr>
+
+
+<p> 아아아아아아아아 
+<p> 흐흐흐흐흐흐흐흐흐
+<p> 가가가가가가가가가가
+		
+<!-- 문단의 끝태그가 없으면 각각의 자식으로 인식 -->
+<!-- <p>태그는 자식 태그로 블록 요소를 가질 수 없다 -->
+<!-- </p>닫는 태그 없이 다음 <p>여는 태그를 작성하면 안된다 -->
+
+<!--  -> 브라우저가 해석할 땐 자동으로 닫는 태그를 추가한다 -->
+<!--  -> 문법은 잘 못 된거지만 화면 상으로는 이상없이 잘 보여진다 -->
+
+<!-- 자동 완성을 해주지만 꼭 닫아줘야 한다! -->
+
+
+</div>       
+
+<hr>
+
+<div>
+
+<pre>
+
+A            B           CD        E
+
+안            녕            하세      요
+
+pre            태 그 입니다.
+
+package test;
+
+import java.util.Scanner;
+
+public class Test{
+	public static void main(String[] args){
+		Scanner sc = new Scanner(System.in);
+		int num = sc.nextInt();
+	
+		System.out.println("num :" + num);
+	
+	}
+}
+
+</pre>
+
+</div> 
+
+<hr>
+
+<div>
+
+기본 텍스트
+<blockquote>"너무 추워요!"</blockquote>
+그냥 작성한 문장
+
+</div>
+
+</div>
+ 
+</body>
+</html>

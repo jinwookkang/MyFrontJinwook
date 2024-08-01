@@ -1,0 +1,124 @@
+<!-- 테이블 태그 7월 31일 -->
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+
+<style type ="text/css">
+/* CSS 주석 */
+
+/*
+
+태그 {
+
+	적용하고싶은 스타일
+}
+
+*/
+/* 테이블영역 th영역 td영역에 각각 테두리를 씌워라  */
+table, th, td{
+
+		border: 1px solid #ccc;
+		
+		/*border: 테두리를 설정 
+		  1px:    두께를 1픽셀로 설정 
+		  solid:  스타일을 실선으로 설정 dashed(점선), dotted(점점선), double(이중선) 
+          #ccc:   색상 #ccc는 회색을 나타내는 16진수 색상 코드.  */
+		 
+		 /* 테이블의 테두리가 겹쳐지는 부분에 대한 표현법  */
+		 /* seperate: 분리해서 표현(기본값) */
+		 /* collapse: 합쳐서 한 줄로 표현 */
+		 
+		 border-collapse:collapse;
+}
+
+</style>
+
+</head>
+<body>
+
+
+<h1>테이블 태그</h1>
+
+<h3>Caption, thread, tbody, tfoot</h3>
+
+
+<hr>
+
+
+
+<table>
+
+
+<!-- 테이블 설명, 바깥쪽 상단에 고정된다 -->
+<caption>전화번호부</caption> <!-- 보통 작성해놓고 안보이게 주석처럼 사용함 -->
+
+
+<!-- 테이블의 머릿글, 최 상단행 -->
+<!-- thead는 어디에 있는지 상관없이 화면전체 표시줄에 맨 위에 가게 되어있음  -->
+<thead>
+
+
+<tr>
+	<th>이름</th>
+	<th>주소</th>
+	<th>전화번호</th>
+</tr>
+
+
+</thead>
+
+<!-- 테이블의 본문, <thead>와 <tfoot>사이에 위치한다 -->
+
+<tbody>
+
+<tr>
+
+	<td>Alice</td>
+	<td>서울시 강남구</td>
+	<td>010111111111</td>
+
+</tr>
+
+<tr>
+
+	<td>Tom</td>
+	<td>서울시 강남구</td>
+	<td>010222222222</td>
+
+</tr>
+
+<tr>
+
+	<td>John</td>
+	<td>서울시 강남구</td>
+	<td>010333333333</td>
+
+</tr>
+
+
+</tbody>
+
+<!-- 테이블의 바닥글, 최 하단행으로 고정된다 -->
+
+<tfoot>
+
+<tr>
+
+	<th>NAME</th>
+	<th>ADDRESS</th>
+	<th>PHONE</th>
+
+</tr>
+
+</tfoot>	
+
+</table>
+
+<hr>
+
+
+</body>
+</html>

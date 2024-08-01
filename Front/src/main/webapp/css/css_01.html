@@ -1,0 +1,106 @@
+<!--8월 1일 CSS를 HTML에 적용하는 방법  -->
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+
+<!-- 임베디드 방식 -->
+<!-- <style>태그를 이용하여 CSS 선택자로 대상을 골라 스타일을 적용 -->
+
+<style type="text/css">
+
+/* p 태그 선택자 - 모든 p태그를 선택한다  */
+
+p {
+  /* font-size속성 : 글자 크기를 지정한다 */
+  font-size : 50px;
+}
+
+/* span 태그선택자 - 모든 span태그를 선택한다 */
+/* ->italic : 기울임 */
+
+span {
+	font-style: italic;
+}
+
+div{ 
+/* font-family - 글꼴을 지정한다 */
+   font-family: 굴림;	
+}
+
+
+/* ----------------------------------------------------------------------------------------------- */
+/* hi 아이디 선택자 - id 속성값이 "hi"인 태그를 선택한다 */
+
+#hi {
+	/* 글자색: 파랑 */
+	color: blue;
+}
+
+/* 클래스 선택자 - class속성값으로 해당 값을 가지는 태그들 선택 */
+
+.hello{
+	/* 글자색: 토마토 */
+	color: tomato;
+
+}
+
+
+.apple{
+	/* 글자 꾸밈선 */
+	text-decoration: underline;
+	
+}
+
+
+
+
+
+
+
+
+
+</style>
+
+</head>
+<body>
+
+<h1>CSS 적용 방법</h1>
+<hr>
+
+<div>
+
+<!-- 인라인 방식  (태그 하나하나에 스타일을 줌)-->
+<!-- 	태그에 style 속성을 이용하여 직접 스타일을 적용한다 -->
+      
+      <p style="color: red;">안녕하세요</p>
+<!--  html 속성 ="CSS style속성 == Property  -->
+
+<!-- color 스타일 속성(property) - 글자 색상을 지정한다 -->
+
+</div>
+
+<hr>
+
+<div>
+
+
+<p class="apple" id="hi">HIHIHIHIHIHIHIHIHIHIHIHIHIHI</p>
+
+
+<p class="hello">반가워요</p>
+
+
+<span>여기는 SPAN태그!</span><br><br>
+
+
+<span class="apple hello">안녕하세요!</span> <!-- 토마토 색상과 밑줄 둘 다 포함  -->
+
+
+</div>
+
+
+</body>
+</html>

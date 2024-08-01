@@ -1,0 +1,55 @@
+<!--8월 1일 CSS를 HTML에 적용하는 방법  -->
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+
+<!-- <link>태그 -->
+<!-- <link rel ="" type="" href=""> -->
+
+<!-- HTML문서에 외부 파일을 적용할 때 사용한다 -->
+<!-- 외부 파일 로드 -->
+
+<!-- rel속성 -->
+<!--   relationship -->
+<!--   외부 파일을 로드하는 "목적"을 표현한다 -->
+
+<!-- type속성 -->
+<!--   로드할 파일의 문서 유형을 지정한다 -->
+<!--   MIME타입으로 작성한다 -->                <!-- **MIME 타입 : 파일유형을 표기하는 방법 --> <!-- 형식/세부사항  -->
+												<!-- text/plain  -->   <!--  ex) <style type="text/css"> css형식으로 가져올것입니다. -->
+<!-- href속성 -->
+<!--   외부 파일의 URL 경로를 지정한다 -->
+
+<!-- ------------------------------------------------------------------------------------------------------------------------------- -->
+
+
+<link rel = "stylesheet" type ="text/css" href="../resources/css/main.css">
+<!-- @import url(../resources/css/main.css);  -->
+
+<!-- <link rel="icon" type ="image/x-icon" href="../resources/favicon.ico"> -->
+
+<link rel="icon" type ="image/x-icon" href="/favicon.ico"> 
+
+
+</head>
+<body>
+
+
+<h1>외부 CSS파일 로드</h1>
+<h3> &lt;link&gt; 방식</h3>
+<hr>
+
+
+<div>
+<p>안녕하세요</p>
+<p>하이</p>
+<span>반가워요</span>
+<span>ㅎㅎ</span>
+</div>
+
+
+</body>
+</html>

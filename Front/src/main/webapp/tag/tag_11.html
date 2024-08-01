@@ -1,0 +1,67 @@
+<!-- form 7월 31일 -->
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+
+
+
+	<h1>
+	
+		<a href="./tag_11.html">form태그 </a> <!--a태그의 자식으로 h태그를 넣을 수 없음 -->
+		
+	
+	</h1>
+                        
+<hr>
+
+<!-- ** form 태그의 action속성  -->
+<!-- 요청 데이터를 포함하여 요청을 전달할 서버의 URL을 지정한다 -->
+<!-- ""로 비워두면 현재 보고 있는 페이지 URL로 요청한다 -->
+
+<!-- ** form태그의 method 속성 -->
+<!-- 요청 데이터를 서버로 전달하는 방식(method)를 지정한다 -->
+<!-- get또는 post를 적용할 수 있다 -->
+<!-- get이 기본값이다 -->
+<!-- cf) GET 방식은 URL에 데이터를 쿼리 문자열로 붙여서 전송
+		 ?뒤에 입력받은 데이터를 붙임
+
+         POST 방식은 데이터를 요청 바디에 담아서 전송          -->
+
+
+
+<form action="" method="get"> <!-- 서버 URL에 상대경로와 절대경로를 넣을 수 있다 -->
+
+	<div>
+	<input type ="text" name="data1">
+	</div>
+
+	<div>
+	<input type ="text" name="data2"> 	<!--inline 요소이기 때문에 그냥 쓰면 옆으로 나옴  -->
+	</div><br>
+	
+	<div>
+	<input type ="submit" value="전송">	<!-- submit이 전송이라고 이름이 바뀜  -->
+	</div>
+	
+	<!-- ** input 태그의 type 속성  -->
+	<!-- "text"  -->
+	<!-- 서버로 전송할 데이터를 사용자가 입력하는 창을 생성한다 -->
+	
+	<!-- "submit" -->
+	<!-- 서버로 데이터를 전송하는 버튼을 생성한다 -->
+	
+	<!--  -->
+	
+	<!-- ** input 태그의 name 속성 -->
+	<!-- 서버로 보내는 요청 데이터 항목의 이름을 지정한다 -->
+	<!-- name속성의 값을 지정하지 않으면 서버에 데이터를 보내지 못한다 -->
+
+</form>
+
+</body>
+</html>
