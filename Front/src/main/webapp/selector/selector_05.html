@@ -1,0 +1,73 @@
+<!--8월 2일 Selector 복합선택자 -->
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type = "text/css">
+
+
+/*h1 태그의 곧바로 다음에 인접한 p태그 한개를 선택 */
+
+h1 + p{
+	background : yellow;
+}
+
+/*  -------------------------------------------------------------------------------------------  */
+
+
+/* h1태그 다음에 오는 모든 p태그 형제 요소를 선택 */
+
+h1 ~ p{
+   border : 1px solid red; 
+}
+
+
+/* div id="content"이하의 h1 다음의 p태그 형제 요소들에게만 적용*/
+
+div#content h1~p{
+
+text-decoration : underline;
+
+}
+
+
+/* -------------------------------------------------------------------------------------------- */
+
+/* h1의 바로 다음에 오는 요소(인접형제)가 choco여야만 적용 됨 */
+/*  -> 선택 대상 없음! */
+h1 +.choco { color : chocoloate; }
+
+/* h1태그의 일반 형제 .chodo 선택 */
+h1~.choco { background: chocolate;}
+
+
+</style>
+
+</head>
+
+<body>
+
+<h1>복합 선택자</h1>
+<h3>인접 형제, 일반 형제</h3>
+<p> p태그 테스트</p>
+<hr>
+
+<div id="content">
+
+	<p>첫번째</p>              <!--  첫번째는 형제들 중에 h1이 먼저 없기 때문에 반영되지 않는다 -->
+	<h1>두번째</h1>
+	<p>세번째</p>
+	<p class="choco">네번째</p>
+	<p class="choco">다섯번째</p>
+	<h1>여섯번째</h1>
+	<p>일곱번째</p>
+	<p>여덟번째</p>
+
+</div>
+
+</body>
+
+</html>

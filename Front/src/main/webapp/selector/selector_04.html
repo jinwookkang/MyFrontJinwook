@@ -1,0 +1,85 @@
+<!--8월 2일 Selector 복합선택자 -->
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type ="text/css">
+
+
+ /* div태그의 자손 중에서 id가 myDiv인 요소를 선택한다 */
+
+div #myDiv{
+
+	background : red;         /*  띄어쓰기가 있어서 복합 선택이 되고있음 */
+							  /*  최종적으로 맨 오른쪽에 있는걸 골라냄*/
+}
+
+div#myDiv{ color: #939; 	   /* 오른쪽에 있는애가 div를 꾸며줌 */           
+                              /* id가 myDiv인 태그 선택자      */
+}
+
+
+
+/* -------------------------------------------------------------------------------- */
+
+/* 모든 ul태그 선택 */
+
+ul {
+
+}
+
+/*  #myDiv의 자손 중에서 ul태그들 선택 */
+#myDiv ul{             
+	border:1px solid #909;
+
+}
+
+/* #myDiv의 자식들 중에서 ul태그들 선택 */
+#myDiv > ul{				
+	color: #666;                        /* 선택은 맨 위에 ul만 했지만 color가 inherited됨 */
+	border: 1px dotted tomato;		    /* border는 inherited되지 않는 속성              */
+}									    
+
+
+/*복합 선택자들 끼리는 적용 우선순위가 같다 */
+/*우선순위가 같기때문에 마지막에 쓴것이 적용된다 */				
+
+
+</style>
+</head>
+
+
+<body>
+
+
+<h1>복합선택자</h1>
+<h3>자손, 자식 선택자</h3>
+
+
+<hr>
+
+
+<ul>
+</ul>
+
+
+<div id="myDiv">
+<ul>
+	<li>1</li>
+	<ul>
+	    <li>2</li>
+	    <ul>
+			<li>2-1</li>
+		    <li>2-2</li>
+		</ul>	 
+     </ul>
+</ul>
+</div>
+
+
+
+
+</body>
+</html>

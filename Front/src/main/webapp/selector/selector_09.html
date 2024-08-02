@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type = "text/css">
+
+::first-line{
+
+ color:blue;
+
+}
+::first-letter {
+	color:red;
+	font-size :20px;
+}
+
+/*---------------------------------------------------  */
+	
+	.new::after{
+		content:"new";
+		
+		font-size: 10px;
+		background-color : #f66;
+		color : #fff;
+		
+		padding:0 2px; /* 위아래 패딩은 없는데 좌우패딩만 2px주겠다 */ 
+	
+/* 		padding-left  : 2px; */
+/* 		padding-right : 2px; */
+	
+/* 		border: 1px solid black; */
+		
+		border-radius: 3px;
+	}
+
+/*---------------------------------------------------  */
+
+/*new가 적용되어있지 않은 p*/
+p:not(.new){
+	background-color: #eee;
+	
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+</style>
+
+
+
+</head>
+<body>
+
+<h1>가상 요소 선택자</h1>
+<hr>
+
+
+<p class="new">첫 번째(p)</p>
+
+<span> 두 번째(span)</span>
+
+<div class = "new">세번째(div)</div>
+
+<p> 네 번째(p). Nam placerat odio ut lorem volutpat iaculis. Fusce porttitor feugiat ante. Aliquam quis imperdiet metus. Etiam tincidunt lacus nec lectus porta egestas. Donec iaculis urna id finibus congue. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Duis aliquet eros nibh, blandit facilisis urna dapibus quis. Suspendisse ut tristique enim, et sollicitudin mauris. </p>
+
+
+</body>
+</html>
