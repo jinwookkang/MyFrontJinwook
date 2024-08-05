@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+span {
+	
+	/* 테두리의 왼쪽, 오른쪽이 잘려나갈 수 있다 */
+	/* (자동) 줄바꿈이 발생할 수 있으며 테두리도 줄바꿈된다 */
+/* 	border: 1px solid red; */
+ 	border-bottom: 1px solid red;
+
+	background-color: #f99;
+
+	/* 적용 안됨 */
+	width: 10000px;
+	height: 10000px;
+
+	/* 배경을 포함한 내부 영역이 넓어진다 */
+	/* 	글자 기준선(baseline)을 벗어나지 않는다 */
+	padding: 5px;
+	
+	/* 상하 외부 여백이 없다 */
+	/* 좌우만 존재하고 마진 중첩이 없다 */
+	margin: 10px;
+
+	/* 줄 간격, 줄 높이 */
+	/* 글자가 들어갈 영역의 높이 */
+	/* 	-> height, margin-top,bottom 등 높이의 효과를 낼 때 사용한다 */
+/* 	line-height: 2.5em; */
+	line-height: 1.85em;
+}
+</style>
+</head>
+<body>
+
+<div>
+	<span id="span1">SPAN1</span>
+	<span id="span2">SPAN2</span>
+	<span id="span3">SPAN3SPAN3SPAN3 SPAN3SPAN3SPAN3</span>
+	<span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce aliquam justo ut congue varius. Donec urna magna, mattis ac magna quis, pharetra finibus ligula. Integer placerat porttitor metus a blandit. Curabitur quis scelerisque metus. Nam egestas rhoncus mauris. Phasellus justo magna, finibus ac felis sit amet, luctus condimentum enim. Integer tincidunt justo sed ornare dignissim.</span>
+</div>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
